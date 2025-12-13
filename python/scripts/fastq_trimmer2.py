@@ -2,11 +2,12 @@ import argparse
 
 def trim(qual,threshold):
     pos=0
-    for base in list(qual):
+    for base in qual:
         if (ord(base)-33 < threshold):
             return(pos)
         else:
             pos += 1
+    return(pos)
 
 
 
